@@ -6,9 +6,9 @@ import {
     TouchableOpacity,
     Platform,
     StyleSheet,
+    Button
 } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
-import { Button } from 'react-native-paper';
 import AsyncStorage from "@react-native-community/async-storage";
 
 const Login = (props) => {
@@ -31,7 +31,7 @@ const Login = (props) => {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
             <Text style={{ fontSize: 25, marginBottom: 20 }}>Login</Text>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 20 }}>
                 <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }} onPress={() => setUserType('Client')}>
                     <MaterialIcons name={userType == 'Client' ? "radio-button-checked" : "radio-button-unchecked"} size={24} color="black" />
                     <Text>Client</Text>
@@ -41,9 +41,7 @@ const Login = (props) => {
                     <Text>Agent</Text>
                 </TouchableOpacity>
             </View>
-            <Button style={{ marginTop: 20 }} mode="contained" onPress={() => onLogin()}>
-                Login
-            </Button>
+            <Button title="Login" color="#841584"  onPress={() => onLogin()} />
         </View>
     );
 };
