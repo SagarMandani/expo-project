@@ -22,7 +22,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "switch the drawer for client or agent wise login",
+    "description": "Display drawer switch agent or client wise login.",
     "githubUrl": "https://github.com/SagarMandani/expo-project"
   }
 }
