@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my-project",
-    "slug": "my-project",
+    "name": "drawer-project",
+    "slug": "drawer-project",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,6 +21,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "switch the drawer for client or agent wise login",
+    "githubUrl": "https://github.com/SagarMandani/expo-project"
   }
 }
